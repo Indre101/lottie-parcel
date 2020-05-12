@@ -1,0 +1,33 @@
+{
+  "name": "lottie_may",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && parcel index.html --open",
+    "build": "parcel build *.html  --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build2": "rm -rf .cache && rm -rf dist && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/polyfill": "7.8.7",
+    "@babel/runtime": "7.8.7",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.3.1",
+    "sass": "^1.26.5",
+    "snowpack": "^2.0.0-beta.12"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "@babel/runtime": "^7.9.6",
+    "@lottiefiles/lottie-player": "0.0.7",
+    "bodymovin": "^4.13.0",
+    "data.js": "^0.12.11",
+    "lottie-web": "^5.6.8"
+  }
+}
